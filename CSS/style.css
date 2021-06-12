@@ -1,0 +1,417 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: verdana, helvetica, sans-serif, arial ;
+}
+
+body{
+	background-color: #9fdd9b;
+}
+
+.main{
+	width: 100%;
+	height: 1000px;
+	
+	min-height: 500px;
+	margin: 0 auto;
+
+}
+.container{
+	width: 100%;
+	height: auto;
+	min-height: 20px;
+	margin: 0 auto
+}
+
+.topbar{
+	width: 100%;
+	height: 4px;
+	background-color: #96858f;
+}
+
+.title_icon{
+	width: 100%;
+	height: 80px;
+	background-color: #EFEFEF;
+	float: left;
+}
+.icon{
+	width: 100px;
+	height: 80px;
+	float: left;
+}
+.search{
+	width: 600px;
+	float: left;
+	padding: 20px;
+	margin-left: -900px;
+
+}
+.search_area{
+	width: 400px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	border-top-left-radius:20px;
+	border-bottom-left-radius: 20px;
+	float: left;
+	padding-left: 15px;
+}
+.search_button{
+	height: 40px;
+	width: 45px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border:none;
+	color: white;
+	background-color:#c42b42;
+	font-weight:bold;
+}
+.login_reg_btn{
+	width: 150px;
+	height: 33px;
+	float: left;
+}
+.header_right{
+	width: 350px;
+	height: auto;
+	float: right;
+}
+.login_reg_btn a{
+	display: block;
+	float: left;
+	color:black;
+	text-decoration: none;
+	line-height: 33px;
+	width: 70px;
+	font-weight: bold;
+	padding-top: 25px;
+}
+
+.cart_btn{
+	width: 150px;
+	height: 80px;
+	background-color: #e7dfdd;
+	float:right;
+}
+.cart_btn img{
+	padding-left:15px;
+	padding-top: 20px;
+}
+.cart_btn span{
+	height: 60px;
+	line-height: 10px;
+	color: black;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+#navbar{
+
+    background-color:#333 ;
+    color: #fff;
+}
+
+#navbar ul{
+
+	text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#navbar li a {
+    display: inline-block;
+    color: white;
+    width: 205px;
+    text-align: center;
+ 	padding-top:15px;
+    text-decoration: none;
+}
+.dropbtn{
+	display: list-item;
+}
+
+#navbar li a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+}
+
+#navbar li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black ;
+    min-width: 160px;
+    opacity: 0.8;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: list-item;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: burlywood ;}
+
+.dropdown:hover .dropdown-content {
+    display: list-item;
+}
+
+h2 {display:block;}
+
+.div1, .div2 {width:700px;margin:0 auto;}
+
+.div1 {margin-top:30px;margin-bottom:60px;text-align:center;line-height:20px;}
+.div1 P {font-size:18px;}
+.div1 a, .div2 a {color:#07C; }
+.div1 a {margin:0 8px;}
+.div1 a.current {color:black; text-decoration:none;}
+
+
+.div2 {margin-top:70px;}
+.div2 li {padding-top:6px;padding-bottom:6px;}
+
+
+.green {color:Green;}
+.cn {font-family: "Courier New", Georgia;}
+#status {display:inline-block; margin-left:26px;line-height:50px;height:50px;vertical-align:middle;}
+
+.code
+{
+    border: dashed 1px #BCBCCB; padding:8px 12px; background-color: #F3F3F9; white-space:pre; font-family:"Courier New", Georgia;
+    font-size:12px; margin:6px 0;overflow:auto; 
+}
+
+
+
+
+
+
+
+
+
+
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+/*slider frame*/
+#sliderFrame {position:relative;background-color:White;}      
+
+#slider, #slider div.sliderInner {
+    width:960px;height:400px;/* Must be the same size as the slider images */
+}
+
+#slider 
+{
+	background:transparent url(loading.gif) no-repeat 50% 50%;
+	position:relative;
+	margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+}
+
+/* the link style (if slide image is wrapped in a link) */
+#slider a.imgLink, #slider .video {
+	z-index:2;
+	position:absolute;
+	top:0px;left:0px;border:0;padding:0;margin:0;
+	width:100%;height:100%;
+}
+#slider .video {
+	background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+/* Caption styles */
+/* Not set as each slide has no caption in this demo. */
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+#slider div.navBulletsWrapper  {
+	display:none;
+}
+
+
+/* --------- Others ------- */
+
+#slider div.loading 
+{
+    width:100%; height:100%;
+    background:transparent url(loading.gif) no-repeat 50% 50%;
+    filter: alpha(opacity=60);
+    opacity:0.6;
+    position:absolute;
+    left:0;
+    top:0; 
+    z-index:9;
+}
+
+#slider img, #slider>b, #slider a>b {
+	position:absolute; border:none; display:none;
+}
+
+#slider div.sliderInner {
+	overflow:hidden; 
+	/*-webkit-transform: rotate(0.000001deg);fixed the Chrome not crop border-radius bug*/
+	position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {display:none;}
+#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+
+
+
+/*----------- navigation buttons on both sides of the slider -----------*/
+.group1-Wrapper 
+{
+    position:absolute;
+    z-index:20;
+    top:120px;
+    margin-left:50%;/* position it in the middle of #sliderFrame */
+    width:1px;
+}
+a.group1-Prev, a.group1-Next
+{
+    width:50px;height:150px;
+    background:transparent url(navbuttons2.gif); 
+    display:block; 
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    user-select: none;
+}
+a.group1-Prev{background-position:0 0; left: -510px;}
+a.group1-Next {background-position:0 -150px;left:460px;}
+
+a.group1-Prev:hover{background-position:50px 0;}
+a.group1-Next:hover {background-position:50px -150px;}
+
+
+/* ----------- navigation buttons in the nav bar ---------- */
+a.group2-Prev, a.group2-Next, a.group2-Play, a.group2-Pause 
+{
+    width:20px; height:20px; 
+    background:transparent url(navbuttons.gif); 
+    display:inline-block; 
+    *display:inline;zoom:1;/*IE hack*/
+    margin-left:4px; margin-right:4px;
+    cursor:pointer;
+}
+a.group2-Pause{background-position:0 0;}
+a.group2-Play {background-position:0 -20px;}
+a.group2-Next {background-position:0 -40px;}
+a.group2-Prev {background-position:0 -60px;} 
+
+a.group2-Pause:hover{background-position:20px 0;}
+a.group2-Play:hover {background-position:20px -20px;}
+a.group2-Next:hover {background-position:20px -40px;}
+a.group2-Prev:hover {background-position:20px -60px;} 
+
+
+
+#login {
+	background-color:rgba(0,0,128,0.2);
+	width:30%;
+	padding-top: 120px;
+	text-align: center;
+	font-family: verdana;
+	font-size: 18px;
+	margin:auto;
+
+}
+.button{
+	background-color:#333;
+	color:#fff;
+	padding:20px 15px;
+	border:none;
+}
+.form-group{
+	color:#FFF;
+	text-decoration: bold;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.form-group label{
+	display: block;
+}
+.form-group2{
+	color:yellow;
+	text-decoration: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+
+.sign{
+	font-size: 16px;
+	font-family: verdana;
+	color:rgb(0,255,127);
+}
+.sign a{
+	color:#FF0000;
+}
+
+
+.books{
+
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+
+
+}
+.product_section_title{
+
+	float: left;
+	width: 100%;
+	display: inline-block;
+	font-size:25px; 
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.product_one{
+
+	float:left;
+	margin-left: 50px;
+	width : 150px;
+	height: auto;
+	border: 1px solid;
+	border-radius:7px;
+	overflow: hidden;
+	padding-left: 50px;
+	
+
+.product_img{
+
+	width: 280px;
+	float: left;
+
+}
+
+.product_img img{
+	padding-left: 50px;
+	width: 100%;
+
+}
